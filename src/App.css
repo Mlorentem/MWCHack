@@ -1,38 +1,50 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  height: auto !important;
+}
+body{
+  background-image: url(./Icons/bg.png);
+  background-size: 50%;
+}
+html, body, #root, #root>div {
+  height: 100% !important;
+}
+
+.left {
+  background-color: green;
+  display: inline-block;
+  opacity: 0.6;
   color: white;
+  padding: 2em;
+  width: 40%;
+  position: relative;
+}
+.formControl{
+  display: inline-block;
+  margin: 20px;
+}
+.right {
+  display: inline-block;
+  background-color: rgb(255, 255, 255);
+  padding: 2em;
+  width: 60%;
 }
 
-.App-link {
-  color: #61dafb;
+.left>p {
+  margin: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.esquina {
+  content: url("./Icons/esquina.png");
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+
+.comilla {
+  content: url("./Icons/comilla.png");
+  margin: auto;
 }
