@@ -1,0 +1,2 @@
+# MWCHack
+Frontend hackathon
